@@ -1,0 +1,25 @@
+{
+  "name": "Ethereum All-in-One",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Everything about Ethereum in one extension",
+  "default_locale": "en_US",
+
+  "icons": {
+    "16": "static/images/icon16.png",
+    "48": "static/images/icon48.png",
+    "128": "static/images/icon128.png"
+  },
+
+  "options_page": "options/options.html",
+  "browser_action":
+  {
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": [
+    "https://api.kraken.com/0/public/Ticker?pair=ETH*",
+    "https://api.ethplorer.io/getAddressInfo/*",
+    "https://fonts.googleapis.com/*"
+  ]
+}
