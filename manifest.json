@@ -3,7 +3,6 @@
   "version": "1.0",
   "manifest_version": 2,
   "description": "Everything about Ethereum in one extension",
-  "default_locale": "en_US",
 
   "icons": {
     "16": "static/images/icon16.png",
