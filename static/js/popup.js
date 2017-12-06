@@ -15,7 +15,7 @@ Popup = {
         walletsListContainer.html('');
 
         // Append templates
-        var tpl, res;
+        var tpl, res, walletValue, walletCurrency;
         for (var i = 1; i <= walletsSize; i++) {
             id = i;
 
