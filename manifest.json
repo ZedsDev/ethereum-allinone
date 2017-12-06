@@ -16,6 +16,11 @@
     "default_popup": "popup/popup.html"
   },
 
+  "background": {
+    "persistent": true,
+    "scripts": ["static/js/config.js", "static/js/app.js", "static/js/background.js"]
+  },
+
   "permissions": [
     "https://api.kraken.com/0/public/Ticker?pair=ETH*",
     "https://api.ethplorer.io/getAddressInfo/*",
