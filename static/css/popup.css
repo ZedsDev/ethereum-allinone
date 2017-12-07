@@ -4,6 +4,7 @@ body {
     color: #3E4552;
     background: #F4F7FA;
 }
+
 body, ul {
     padding: 0;
     margin: 0;
@@ -12,19 +13,23 @@ body, ul {
 .topbar {
     background: #376eb4;
 }
+
 .topbar__logo {
     height: 20px;
     position: absolute;
     top: 8px;
     left: 8px;
 }
+
 .topbar__menu {
     list-style: none;
     padding-left: 36px;
 }
+
 .topbar__menu li {
     list-style-type: none;
 }
+
 .topbar__menu li a {
     display: block;
     float: left;
@@ -34,12 +39,14 @@ body, ul {
     padding: 10px 15px;
     font-size: 13px;
 }
+
 .topbar__menu li a .fa-mr {
     margin-right: 5px;
 }
+
 .topbar__menu li a:hover,
 .topbar__menu li a.tab--selected {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /** General **/
@@ -50,6 +57,7 @@ body, ul {
     margin-bottom: 10px;
     text-align: center;
 }
+
 p {
     font-size: 12px;
 }
@@ -58,6 +66,7 @@ p {
 .tab {
     padding: 10px 0;
 }
+
 .tab--hidden {
     display: none;
 }
@@ -67,14 +76,35 @@ p {
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
-}
-.ticker__value {
     text-align: center;
+}
+
+.ticker__price {
     font-size: 25px;
-    margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    line-height: 27px;
 }
+
+.ticker__value {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.ticker__percentage {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ticker__percentage--green {
+    color: #2E7D32;
+}
+
+.ticker__percentage--red {
+    color: #C62828;
+}
+
 .ticker__data {
     font-size: 11px;
     text-align: center;
@@ -84,40 +114,48 @@ p {
 .wallets {
     font-size: 19px;
 }
+
 .wallets__entry {
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 .wallets__entry-name {
     font-family: 'Open Sans', sans-serif;
     padding: 5px;
     border-bottom: 1px solid #ddd;
-    background: rgba(55,110,180,0.1);
+    background: rgba(55, 110, 180, 0.1);
     font-size: 16px;
 }
+
 .wallets__entry-value {
     padding: 15px 0;
     background: #F9FBFC;
 }
+
 .wallets__entry-eth {
     font-size: 16px;
 }
+
 .wallets__entry-currency {
     color: #9BA6B2;
     font-size: 15px;
 }
+
 .no-wallet-info {
     color: #9BA6B2;
     text-align: center;
     font-style: italic;
     font-size: 12px;
 }
+
 /** No bullshit **/
 .no-bullshit {
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
 }
+
 /** You can help **/
 .you-can-help {
 

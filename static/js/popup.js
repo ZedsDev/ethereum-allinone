@@ -49,7 +49,8 @@ Popup = {
      * Get ETH prices
      */
     getTickerPrices: function () {
-        var _this = this;
+        var _this = this,
+            percentHtml = $('.js--percentage');
 
         App.getTicker(function (response) {
             if (response.readyState === XMLHttpRequest.DONE) {
@@ -58,12 +59,20 @@ Popup = {
                         price = rate = res['c'][0],
                         opening = res['o'],
                         high = res['h'][1],
-                        low = res['l'][1];
+                        low = res['l'][1],
+                        perf = ((price - opening) / opening) * 100;
 
                     $('.js--ticker-price').html(App.priceFormatter(price));
                     $('.js--ticker-opening').html(App.priceFormatter(opening));
                     $('.js--ticker-high').html(App.priceFormatter(high));
                     $('.js--ticker-low').html(App.priceFormatter(low));
+                    percentHtml.html(parseFloat(perf).toFixed(2)+"%");
+
+                    if(perf > 0) {
+                        percentHtml.addClass('ticker__percentage--green').removeClass('ticker__percentage--red');
+                    } else {
+                        percentHtml.addClass('ticker__percentage--red').removeClass('ticker__percentage--green');
+                    }
 
                     _this.getWalletsInfos();
                 }
